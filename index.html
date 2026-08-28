@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tessera — Your cards, in Apple Wallet</title>
+<meta name="description" content="Scan a membership, loyalty or club card and turn it into a real Apple Wallet pass. Read on your device, never uploaded.">
+<meta property="og:title" content="Tessera — Your cards, in Apple Wallet">
+<meta property="og:description" content="Scan a membership, loyalty or club card and turn it into a real Apple Wallet pass.">
+<meta property="og:image" content="https://zhiyao92.github.io/tessera-landing/assets/og-image.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/app-icon.png">
+<link rel="apple-touch-icon" href="assets/app-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground: #F6F7FC; --surface: #FFFFFF; --ink: #14172B; --muted: #62688C;
+    --edge: #E2E5F2; --accent: #3A4FD0; --accent-soft: #EDF0FE;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ground: #0F1122; --surface: #191C31; --ink: #ECEEF8; --muted: #9AA0C0;
+            --edge: #2A2E49; --accent: #8A99F2; --accent-soft: #212643; }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--ground); color: var(--ink);
+         font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+         font-size: 17px; line-height: 1.65; -webkit-text-size-adjust: 100%; }
+  .wrap { max-width: 62rem; margin: 0 auto; padding: 0 clamp(1.1rem, 4vw, 2rem); }
+  a { color: var(--accent); }
+
+  header.hero { padding: clamp(3rem, 8vw, 5.5rem) 0 clamp(2rem, 5vw, 3.5rem); }
+  .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center; }
+  @media (max-width: 760px) { .hero-grid { grid-template-columns: 1fr; } .phone { max-width: 300px; margin: 0 auto; } }
+  .brand { display: flex; align-items: center; gap: .8rem; margin-bottom: 2.2rem; }
+  .brand img { width: 52px; height: 52px; border-radius: 12px; box-shadow: 0 6px 18px rgb(20 23 43 / .18); }
+  .brand span { font-weight: 600; font-size: 1.25rem; letter-spacing: -.01em; }
+  h1 { font-family: Newsreader, Georgia, serif; font-weight: 600;
+       font-size: clamp(2.4rem, 6vw, 3.6rem); line-height: 1.08; letter-spacing: -.015em;
+       text-wrap: balance; margin-bottom: 1rem; }
+  .lede { color: var(--muted); font-size: 1.12rem; max-width: 34rem; margin-bottom: 1.8rem; }
+  .cta { display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+         font-weight: 600; padding: .8rem 1.6rem; border-radius: 12px; }
+  .cta.soon { background: var(--accent-soft); color: var(--accent); cursor: default; }
+  .phone { border-radius: 38px; border: 8px solid var(--ink); overflow: hidden;
+           box-shadow: 0 30px 60px rgb(20 23 43 / .28); background: var(--ink); }
+  .phone img { display: block; width: 100%; height: auto; }
+
+  section { padding: clamp(2.2rem, 6vw, 3.6rem) 0; }
+  h2 { font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 1.7rem;
+       letter-spacing: -.01em; margin-bottom: 1.4rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+  .card { background: var(--surface); border: 1px solid var(--edge); border-radius: 16px; padding: 1.3rem; }
+  .card h3 { font-size: 1rem; font-weight: 600; margin-bottom: .35rem; }
+  .card p { color: var(--muted); font-size: .95rem; }
+
+  .honest { border-left: 3px solid var(--accent); background: var(--accent-soft);
+            border-radius: 0 14px 14px 0; padding: 1.2rem 1.4rem; }
+  .honest p { color: var(--ink); font-size: .98rem; }
+  .honest p + p { margin-top: .6rem; }
+
+  footer { border-top: 1px solid var(--edge); padding: 2rem 0 3rem; color: var(--muted); font-size: .92rem; }
+  footer nav { display: flex; gap: 1.4rem; flex-wrap: wrap; margin-bottom: .8rem; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><img src="assets/app-icon.png" alt=""><span>Tessera</span></div>
+    <div class="hero-grid">
+      <div>
+        <h1>Your cards, in Apple&nbsp;Wallet</h1>
+        <p class="lede">Point your camera at a membership, loyalty or club card. Tessera reads it on your device, you confirm the details, and it becomes a real Apple Wallet pass — with a barcode that scans like the original.</p>
+        <span class="cta soon" id="appstore">Coming to the App&nbsp;Store</span>
+      </div>
+      <div class="phone"><img src="assets/tessera-home.png" alt="Tessera's home screen showing several scanned cards"></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>What it does</h2>
+    <div class="grid">
+      <div class="card"><h3>Reads the card, not just the barcode</h3><p>Name, number, expiry — recognised on your iPhone with Apple's Vision framework, then shown to you to correct before anything is created.</p></div>
+      <div class="card"><h3>Barcodes that really scan</h3><p>Wallet draws a fresh code from the number behind yours. Types Wallet can't draw — EAN-13, Code 39 — are drawn faithfully onto the pass instead.</p></div>
+      <div class="card"><h3>Looks like your card</h3><p>The pass takes your card's own colours from the photo. Templates recognise the kind of card, popular brands get their palette, and you can add a logo.</p></div>
+      <div class="card"><h3>Reminded before it lapses</h3><p>A month before, a week before, and on the day a card expires — set up by reading your card, not by you.</p></div>
+      <div class="card"><h3>Kept, backed up, shared</h3><p>Optional iCloud backup through your own account. Share a household card so both of you carry it.</p></div>
+      <div class="card"><h3>The right kind of pass</h3><p>Membership cards, coupons and season tickets each become the proper Wallet layout, not one-size-fits-all.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Built private, and honest about it</h2>
+    <div class="honest">
+      <p>The photo of your card is read on your device and then discarded — never saved, never uploaded. Only the details needed to lay out a pass are sent to be signed, and nothing is kept afterwards. No account required.</p>
+      <p>Tessera creates a personal digital copy of a card you already own. It is not an official credential and does not produce government identity documents. Some places will still ask for the physical card.</p>
+    </div>
+  </div>
+</section>
+
+<section id="support">
+  <div class="wrap">
+    <h2>Support</h2>
+    <p>Questions, problems, or a card Tessera read badly? Email <a href="mailto:kelvin.vins@gmail.com?subject=Tessera%20support">kelvin.vins@gmail.com</a> — it goes straight to the developer, and screenshots of the card review screen help enormously.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="#support">Support</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+    </nav>
+    <p>© 2026 Kelvin Tan. Apple Wallet is a trademark of Apple Inc. Tessera is not affiliated with any card issuer; brand colours identify the user's own cards.</p>
+  </div>
+</footer>
+
+</body>
+</html>

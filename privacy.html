@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tessera — Privacy Policy</title>
+<link rel="icon" href="assets/app-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root { --ground:#F6F7FC; --ink:#14172B; --muted:#62688C; --edge:#E2E5F2; --accent:#3A4FD0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ground:#0F1122; --ink:#ECEEF8; --muted:#9AA0C0; --edge:#2A2E49; --accent:#8A99F2; }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--ground); color: var(--ink);
+         font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+         font-size: 17px; line-height: 1.7; }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: clamp(2rem,6vw,4rem) clamp(1.1rem,4vw,2rem) 4rem; }
+  a { color: var(--accent); }
+  h1 { font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 2.2rem;
+       letter-spacing: -.015em; margin-bottom: .4rem; }
+  .meta { color: var(--muted); margin-bottom: 2.2rem; }
+  h2 { font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 1.35rem;
+       margin: 2rem 0 .6rem; }
+  p, li { color: var(--ink); }
+  p + p { margin-top: .7rem; }
+  ul { padding-left: 1.2rem; margin: .5rem 0; }
+  li + li { margin-top: .35rem; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Tessera Privacy Policy</h1>
+  <p class="meta">Effective 28 August 2026 · <a href="index.html">tessera</a> · Kelvin Tan</p>
+
+  <p>Tessera turns physical cards — membership, loyalty, club and similar cards — into Apple Wallet passes. This policy describes exactly what the app processes, what leaves your device, and what is kept. The short version: your card photos never leave your iPhone, the app has no accounts, and the only things stored anywhere are listed below.</p>
+
+  <h2>What stays on your device</h2>
+  <ul>
+    <li><strong>Card photos.</strong> Recognition runs on your iPhone using Apple's Vision framework. The photo is discarded after recognition — it is never saved to your device's library, never stored by the app, and never uploaded.</li>
+    <li><strong>Your saved cards.</strong> Card details you keep are stored locally on your device. If you turn on iCloud backup in Settings (off by default), they sync through your own iCloud account under Apple's terms; we never see them.</li>
+    <li><strong>Expiry reminders.</strong> Scheduled locally on your device. Reminder notifications name the card but never show its number.</li>
+  </ul>
+
+  <h2>What is transmitted, and why</h2>
+  <ul>
+    <li><strong>Pass creation.</strong> When you create a pass, the confirmed details (card name, holder name, number, expiry, barcode value, colours, and a logo if you added one) are sent over an encrypted connection to our signing service, which builds and cryptographically signs the Apple Wallet pass. These details are used only to service that request and are not stored, logged or shared.</li>
+    <li><strong>Free-tier count.</strong> The app generates a random identifier on your device (it contains no personal information). Our service stores this identifier with a count of the cards it has created, to operate the free tier of three cards. Nothing about the cards' contents is stored — only random identifiers.</li>
+  </ul>
+
+  <h2>Purchases</h2>
+  <p>Purchases are processed by Apple. We use <a href="https://www.revenuecat.com/privacy">RevenueCat</a> to manage subscription status; it receives purchase history tied to the same random device identifier, not to your name or email. We never see payment details.</p>
+
+  <h2>Advertising</h2>
+  <p>The free tier shows ads served by Google AdMob. AdMob may collect device identifiers (such as the advertising identifier, with your permission via Apple's App Tracking Transparency prompt), coarse location derived from IP address, ad interaction data and diagnostic data, and may use some of this to track across apps. Declining the tracking prompt keeps ads, just less personalised ones. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>. Tessera Pro removes ads entirely, and with them this collection.</p>
+
+  <h2>What we never do</h2>
+  <ul>
+    <li>No accounts, and no collection of your name, email or contacts.</li>
+    <li>Card photos, recognised text, barcode values and NFC data are never logged or retained by us.</li>
+    <li>Nothing is sold to, or shared with, data brokers.</li>
+  </ul>
+
+  <h2>Your choices and rights</h2>
+  <ul>
+    <li>Delete any card, or all cards, in the app — Settings → Delete All Card Data.</li>
+    <li>Control ad tracking in iOS Settings → Privacy &amp; Security → Tracking.</li>
+    <li>To have the free-tier record for your device identifier deleted, email us; note the identifier is random and we cannot link it to you — include it from any support correspondence, or simply ask and we will explain how to find it.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Tessera is not directed at children under 13 and does not knowingly collect information from them.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version appears here with a new effective date. Material changes are noted in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:kelvin.vins@gmail.com?subject=Tessera%20privacy">kelvin.vins@gmail.com</a></p>
+
+  <p class="muted" style="margin-top:2.4rem">Tessera creates personal digital copies of cards you already own. It is not an official credential and is not affiliated with any card issuer.</p>
+</div>
+</body>
+</html>
