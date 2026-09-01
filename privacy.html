@@ -5,34 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tessera — Privacy Policy</title>
 <link rel="icon" href="assets/app-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
-  :root { --ground:#F6F7FC; --ink:#14172B; --muted:#62688C; --edge:#E2E5F2; --accent:#3A4FD0; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --ground:#FAFAFF; --ink:#14172B; --muted:#62688C; --edge:#E3E5F4; --accent:#3A4FD0; }
   @media (prefers-color-scheme: dark) {
-    :root { --ground:#0F1122; --ink:#ECEEF8; --muted:#9AA0C0; --edge:#2A2E49; --accent:#8A99F2; }
+    :root { --ground:#0D0F1E; --ink:#ECEEF8; --muted:#9AA0C0; --edge:#282D4A; --accent:#8A99F2; }
   }
-  * { box-sizing: border-box; margin: 0; }
-  body { background: var(--ground); color: var(--ink);
-         font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
-         font-size: 17px; line-height: 1.7; }
+  body {
+    background: var(--ground); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 17px; line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
   .wrap { max-width: 44rem; margin: 0 auto; padding: clamp(2rem,6vw,4rem) clamp(1.1rem,4vw,2rem) 4rem; }
   a { color: var(--accent); }
-  h1 { font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 2.2rem;
-       letter-spacing: -.015em; margin-bottom: .4rem; }
-  .meta { color: var(--muted); margin-bottom: 2.2rem; }
-  h2 { font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 1.35rem;
-       margin: 2rem 0 .6rem; }
+  h1 { font-size: clamp(1.9rem, 5vw, 2.4rem); font-weight: 800; letter-spacing: -1px; margin-bottom: .4rem; }
+  .meta { color: var(--muted); margin-bottom: 2.2rem; font-size: .95rem; }
+  h2 { font-size: 1.3rem; font-weight: 750; letter-spacing: -.4px; margin: 2rem 0 .6rem; }
   p, li { color: var(--ink); }
   p + p { margin-top: .7rem; }
   ul { padding-left: 1.2rem; margin: .5rem 0; }
   li + li { margin-top: .35rem; }
-  .muted { color: var(--muted); }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .92em; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  .back { display: inline-block; margin-bottom: 1.6rem; font-size: .9rem; text-decoration: none; font-weight: 650; }
 </style>
 </head>
 <body>
 <div class="wrap">
+  <a class="back" href="index.html">&larr; Tessera</a>
   <h1>Tessera Privacy Policy</h1>
   <p class="meta">Effective 28 August 2026 · <a href="index.html">tessera</a> · Kelvin Tan</p>
 
